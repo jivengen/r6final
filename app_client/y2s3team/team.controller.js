@@ -13,10 +13,13 @@
         vm.content = "ENCE Data Soon?";
         vm.selectedTeam = "ENCE";
         
-       /* vm.getTeamData = function(){
-                Y2s3Data.getTeamData(vm.selectedTeam.team)
+       vm.getY2s3DataForTeam = function(){
+                Y2s3Data.getY2s3DataForTeam(vm.selectedTeam)
                 .then(function(response){
+                    console.log(vm.selectedTeam);
                     vm.teamData = response.data[0];
+                    console.log(vm.teamData);
+                    
                 })
                 .catch(function(e){
                     console.log(e);
@@ -24,7 +27,7 @@
             };
             console.log("IN CTRL FOR TEAM DATA");
             
-            vm.getTeamData();*/
+            vm.getY2s3DataForTeam();
         
 
         
