@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var TeamData = mongoose.model('y2s3data');
+var TeamData = mongoose.model('Y2s3Data');
 
 var sendJSONresponse = function(res, status, content){
     res.status(status);

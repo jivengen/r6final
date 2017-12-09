@@ -1,16 +1,12 @@
 (function() {
-
+  
   angular
-    .module('rainbowApp')
+    .modeul('rainbowApp')
     .factory('SelectedData', selectedData);
-
-  //selectedData.$inject = ['$http'];
-  function selectedData () {
-      return {
-          selectedTeam : '',
-          selectedArrivalICAO : '',
-          selectedWeight : ''
+    
+    function selectedData(){
+      return{
+        selectedTeam : ''
       };
-  }
-
+    }
 })();

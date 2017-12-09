@@ -3,9 +3,9 @@
         .module('rainbowApp')
         .controller('teamCtrl', teamCtrl);
         
-    teamCtrl.$inject = ['$scope'];
+    teamCtrl.$inject = ['$scope', 'Y2s3Data'];
     
-    function teamCtrl($scope) {
+    function teamCtrl($scope, Y2s3Data) {
         var vm = this;
         //console.log(window.location);
         console.log("In team controller");

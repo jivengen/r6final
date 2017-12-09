@@ -1,20 +1,23 @@
 (function() {
+    
     angular
         .module('rainbowApp')
-        .service('Y2s3Data', Y2s3Data );
+        .service('Y2s3Data', y2s3Data);
         
-        Y2s3Data.$inject = ['$http'];
-        
-        
-        function Y2s3Data($http){
-            var getTeamData = function(){
-                return $http.get('api/y2s3/ENCE');
-                //return $http.get('/api/y2s3/' + team);
-            };
-            
-            return {
-                getTeamData : getTeamData,
-            };
-        }
+    y2s3Data.$inject = ['$http'];
     
-})
+    function y2s3Data($http) {
+        var getY2s3Data = function() {
+            return $http.get('/api/y2s3Data');
+        };
+        
+        var getY2s3DataForTeam = function(team){
+            return $http.get('/api/y2s3Data/' + team);
+        };
+        
+        return{
+            getY2s3Data : getY2s3Data,
+            getY2s3DataForTeam : getY2s3DataForTeam
+        };
+    }
+})();
