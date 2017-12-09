@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+  <script>
+	jQuery(document).ready(function(){
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(showLocation);
+		}else{
+			console.log('Geolocation is not supported by this browser.');
+			jQuery('#error').html('Geolocation is not supported by this browser.');
+		}
+	});
+	function showLocation(position){
+		var latitude = position.coords.latitude;
+		console.log("latitude: " + latitude);
+		jQuery('#latitude').html("latitude: " + latitude);
+		//document.getElementById('latitude')
+		//	.setAttribute('value', latitude);
+		var longitude = position.coords.longitude;
+		console.log("longitude: " + longitude);
+		jQuery('#longitude').html("longitude: " + longitude);
+		//document.getElementById('<?php echo $this->get_field_id( 'darksky_api_lon' ); ?>')
+		//	.setAttribute('value', longitude);
+	}	
+  </script>
+</head>
+
+<body>
+  <h2>Geolocation</h2>
+  <p id="latitude"></p>
+  <p id="longitude"></p>
+  <p id="error"></p>
+</body>
+</html>
