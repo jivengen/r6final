@@ -1,21 +1,21 @@
 (function(){
     angular
         .module('rainbowApp')
-        .controller('y2s3ENCECtrl', y2s3ENCECtrl);
+        .controller('y2s3einsCtrl', y2s3einsCtrl);
         
-    y2s3ENCECtrl.$inject = ['$scope', 'Y2s3Data'];
+    y2s3einsCtrl.$inject = ['$scope', 'Y2s3Data'];
     
-    function y2s3ENCECtrl($scope, Y2s3Data) {
+    function y2s3einsCtrl($scope, Y2s3Data) {
         var vm = this;
         //console.log(window.location);
         console.log("In team controller");
         
         vm.content = "ENCE Data Soon?";
-        //vm.selectedTeam = "ENCE";
+        //vm.selectedTeam = "";
         
         
        vm.getY2s3DataForTeam = function(){
-                Y2s3Data.getY2s3DataForTeam("ENCE")
+                Y2s3Data.getY2s3DataForTeam("Eins")
                 .then(function(response){
                     console.log(vm.selectedTeam);
                     vm.teamData = response.data;

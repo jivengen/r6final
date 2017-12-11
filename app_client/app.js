@@ -27,9 +27,19 @@
         controller: 'y2s3egCtrl',
         controllerAs: 'vm'
       })
-            .when('/y2s3/BD', {
+      .when('/y2s3/BD', {
         templateUrl: '/y2s3team/team.view.html',
         controller: 'y2s3bdCtrl',
+        controllerAs: 'vm'
+      })
+      .when('/y2s3/Eins', {
+        templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s3einsCtrl',
+        controllerAs: 'vm'
+      })
+            .when('/y2s3/1NF', {
+        templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s31nfCtrl',
         controllerAs: 'vm'
       })
       .otherwise({redirectTo: '/'});
