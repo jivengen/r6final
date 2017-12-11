@@ -37,9 +37,24 @@
         controller: 'y2s3einsCtrl',
         controllerAs: 'vm'
       })
-            .when('/y2s3/1NF', {
+      .when('/y2s3/1NF', {
         templateUrl: '/y2s3team/team.view.html',
         controller: 'y2s31nfCtrl',
+        controllerAs: 'vm'
+      })
+      .when('/y2s3/Mantis', {
+        templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s3mantisCtrl',
+        controllerAs: 'vm'
+      })
+      .when('/y2s3/Fontt', {
+        templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s3FonttCtrl',
+        controllerAs: 'vm'
+      })
+      .when('/y2s3/PENTA', {
+        templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s3pentaCtrl',
         controllerAs: 'vm'
       })
       .otherwise({redirectTo: '/'});
