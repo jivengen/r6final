@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var connectionstring = "mongodb://r6db:whitenoise@ds044577.mlab.com:44577/r6project";
+var connectionstring = process.env.MONGO_Y2S3_KEY;
 mongoose.connect(connectionstring, { useMongoClient: true});
 console.log("DB STUFF");
 
