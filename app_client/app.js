@@ -22,9 +22,14 @@
         controller: 'y2s3ENCECtrl',
         controllerAs: 'vm'
       })
-      .when('/y2s3/Evil Geniuses', {
+      .when('/y2s3/EG', {
         templateUrl: '/y2s3team/team.view.html',
-        controller: 'teamCtrl',
+        controller: 'y2s3egCtrl',
+        controllerAs: 'vm'
+      })
+            .when('/y2s3/BD', {
+        templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s3bdCtrl',
         controllerAs: 'vm'
       })
       .otherwise({redirectTo: '/'});
