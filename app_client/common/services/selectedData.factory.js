@@ -1,7 +1,7 @@
 (function() {
   
   angular
-    .modeul('rainbowApp')
+    .module('rainbowApp')
     .factory('SelectedData', selectedData);
     
     function selectedData(){

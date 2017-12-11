@@ -12,7 +12,10 @@
         };
         
         var getY2s3DataForTeam = function(team){
+            console.log("For team area");
+            console.log(team);
             return $http.get('/api/y2s3Data/' + team);
+            
         };
         
         return{

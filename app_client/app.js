@@ -19,6 +19,11 @@
       })
       .when('/y2s3/ENCE', {
         templateUrl: '/y2s3team/team.view.html',
+        controller: 'y2s3ENCECtrl',
+        controllerAs: 'vm'
+      })
+      .when('/y2s3/Evil Geniuses', {
+        templateUrl: '/y2s3team/team.view.html',
         controller: 'teamCtrl',
         controllerAs: 'vm'
       })
