@@ -57,6 +57,11 @@
         controller: 'y2s3pentaCtrl',
         controllerAs: 'vm'
       })
+      .when('/players/Canadian',{
+        templateUrl: '/players/players.view.html',
+        controller: 'playerCtrl',
+        controllerAs:'vm'
+      })
       .otherwise({redirectTo: '/'});
 
     // use the HTML5 History API
