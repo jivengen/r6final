@@ -9,7 +9,7 @@
         var vm = this;
         //console.log(window.location);
         console.log("In team controller");
-        
+        vm.linkteam = "/players/Fontt";
         vm.content = "ENCE Data Soon?";
         //vm.selectedTeam = "";
         

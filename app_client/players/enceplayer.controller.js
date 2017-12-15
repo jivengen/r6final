@@ -1,16 +1,16 @@
 (function(){
     angular
             .module('rainbowApp')
-            .controller('playerCtrl', playerCtrl);
+            .controller('ENCEplayerCtrl', ENCEplayerCtrl);
             
-            playerCtrl.$inject = ['$scope', 'PlayerData'];
+            ENCEplayerCtrl.$inject = ['$scope', 'PlayerData'];
             
-            function playerCtrl($scope, PlayerData){
+            function ENCEplayerCtrl($scope, PlayerData){
                 var vm = this;
                 
                 console.log("in player controller");
                 vm.content = "EG Ranked Data";
-                vm.selectedplayer="87b5229e-c0be-4b99-8a39-571d5ab84399";
+                vm.selectedplayer="4930e1ce-223d-4dea-a2e0-b4dcdcaad94a";
 
                 
                 vm.getPlayerData = function(){
@@ -27,7 +27,7 @@
                     });
                     
                 };
-                vm.selectedplayer2="3f8f76ca-a125-41bf-8704-2fb4b64a5ca5";
+                vm.selectedplayer2="8cd97b18-e5da-4ae1-b3ac-366f79114cc9";
 
                 
                 vm.getPlayerData1 = function(){
@@ -45,7 +45,7 @@
                     });
                 };
                 
-                vm.selectedplayer3="04e11153-ac5c-4bc2-8b03-a625d8c88057";
+                vm.selectedplayer3="b78f15cc-c1f4-4abd-9134-e5d9cb3ef608";
 
                 
                 vm.getPlayerData2 = function(){
@@ -64,7 +64,7 @@
       
                 };
                 
-                vm.selectedplayer4="115497b4-5c13-416f-b356-a542765c5233";
+                vm.selectedplayer4="7ae6af91-6b98-4f6e-a89a-3021ab29ed2d";
 
                 
                 vm.getPlayerData3 = function(){
@@ -83,7 +83,7 @@
       
                 };
                 
-                vm.selectedplayer5="d66660d2-95fe-47a2-b7e5-e615f07d8337";
+                vm.selectedplayer5="cecf58a0-3970-4271-8670-c8696eb57308";
 
                 
                 vm.getPlayerData4 = function(){

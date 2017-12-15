@@ -57,9 +57,44 @@
         controller: 'y2s3pentaCtrl',
         controllerAs: 'vm'
       })
-      .when('/players/Canadian',{
+      .when('/players/EG',{
         templateUrl: '/players/players.view.html',
-        controller: 'playerCtrl',
+        controller: 'EGplayerCtrl',
+        controllerAs:'vm'
+      })      
+      .when('/players/ENCE',{
+        templateUrl: '/players/playerseu.view.html',
+        controller: 'ENCEplayerCtrl',
+        controllerAs:'vm'
+      })
+        .when('/players/Penta',{
+        templateUrl: '/players/playerseu.view.html',
+        controller: 'PentaplayerCtrl',
+        controllerAs:'vm'
+      })
+      .when('/players/BD',{
+        templateUrl: '/players/players.view.html',
+        controller: 'BDplayerCtrl',
+        controllerAs:'vm'
+      })  
+      .when('/players/Eins',{
+        templateUrl: '/players/players.view.html',
+        controller: 'EinsplayerCtrl',
+        controllerAs:'vm'
+      })
+      .when('/players/Fontt',{
+        templateUrl: '/players/players.view.html',
+        controller: 'FonttplayerCtrl',
+        controllerAs:'vm'
+      })
+      .when('/players/1NF',{
+        templateUrl: '/players/players.view.html',
+        controller: '1NFplayerCtrl',
+        controllerAs:'vm'
+      })
+      .when('/players/Mantis',{
+        templateUrl: '/players/players.view.html',
+        controller: 'MFPSplayerCtrl',
         controllerAs:'vm'
       })
       .otherwise({redirectTo: '/'});

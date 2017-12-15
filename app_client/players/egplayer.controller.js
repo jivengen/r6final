@@ -1,11 +1,11 @@
 (function(){
     angular
             .module('rainbowApp')
-            .controller('playerCtrl', playerCtrl);
+            .controller('EGplayerCtrl', EGplayerCtrl);
             
-            playerCtrl.$inject = ['$scope', 'PlayerData'];
+            EGplayerCtrl.$inject = ['$scope', 'PlayerData'];
             
-            function playerCtrl($scope, PlayerData){
+            function EGplayerCtrl($scope, PlayerData){
                 var vm = this;
                 
                 console.log("in player controller");
