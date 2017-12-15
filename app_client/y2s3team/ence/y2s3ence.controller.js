@@ -10,6 +10,7 @@
         //console.log(window.location);
         console.log("In team controller");
         vm.linkteam = "/players/ENCE";
+        vm.teamlogo = "/images/ENCE.jpg";
         vm.content = "ENCE Data Soon?";
         //vm.selectedTeam = "ENCE";
         

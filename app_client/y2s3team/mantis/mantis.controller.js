@@ -10,6 +10,7 @@
         //console.log(window.location);
         console.log("In team controller");
         vm.linkteam = "/players/Mantis";
+        vm.teamlogo = "/images/MantisFps.jpg";
         vm.content = "ENCE Data Soon?";
         //vm.selectedTeam = "";
         

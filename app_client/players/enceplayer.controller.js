@@ -10,6 +10,7 @@
                 
                 console.log("in player controller");
                 vm.content = "EG Ranked Data";
+                vm.teamlogo = "/images/ENCE.jpg";
                 vm.selectedplayer="4930e1ce-223d-4dea-a2e0-b4dcdcaad94a";
 
                 

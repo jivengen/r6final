@@ -78,7 +78,7 @@
         controllerAs:'vm'
       })  
       .when('/players/Eins',{
-        templateUrl: '/players/players.view.html',
+        templateUrl: '/players/playersapac.view.html',
         controller: 'EinsplayerCtrl',
         controllerAs:'vm'
       })
@@ -89,11 +89,11 @@
       })
       .when('/players/1NF',{
         templateUrl: '/players/players.view.html',
-        controller: '1NFplayerCtrl',
+        controller: 'INFplayerCtrl',
         controllerAs:'vm'
       })
       .when('/players/Mantis',{
-        templateUrl: '/players/players.view.html',
+        templateUrl: '/players/playersapac.view.html',
         controller: 'MFPSplayerCtrl',
         controllerAs:'vm'
       })

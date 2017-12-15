@@ -1,17 +1,17 @@
 (function(){
     angular
             .module('rainbowApp')
-            .controller('EGplayerCtrl', EGplayerCtrl);
+            .controller('BDplayerCtrl', BDplayerCtrl);
             
-            EGplayerCtrl.$inject = ['$scope', 'PlayerData'];
+            BDplayerCtrl.$inject = ['$scope', 'PlayerData'];
             
-            function EGplayerCtrl($scope, PlayerData){
+            function BDplayerCtrl($scope, PlayerData){
                 var vm = this;
                 
                 console.log("in player controller");
                 vm.content = "EG Ranked Data";
-                vm.teamlogo = "/images/EG3.jpg";
-                vm.selectedplayer="87b5229e-c0be-4b99-8a39-571d5ab84399";
+                vm.teamlogo = "/images/BD.jpg";
+                vm.selectedplayer="e213685e-4b6c-4afc-9a53-7726b8ec6275";
 
                 
                 vm.getPlayerData = function(){
@@ -28,7 +28,7 @@
                     });
                     
                 };
-                vm.selectedplayer2="3f8f76ca-a125-41bf-8704-2fb4b64a5ca5";
+                vm.selectedplayer2="9431ddc3-cb70-4875-9c95-307cf4e5f62f";
 
                 
                 vm.getPlayerData1 = function(){
@@ -46,7 +46,7 @@
                     });
                 };
                 
-                vm.selectedplayer3="04e11153-ac5c-4bc2-8b03-a625d8c88057";
+                vm.selectedplayer3="3aaa3f4c-faa5-487c-9bec-af3ed166b06f";
 
                 
                 vm.getPlayerData2 = function(){
@@ -65,7 +65,7 @@
       
                 };
                 
-                vm.selectedplayer4="115497b4-5c13-416f-b356-a542765c5233";
+                vm.selectedplayer4="1fb07f4a-fbcf-465c-8fb9-0a1cff670a3c";
 
                 
                 vm.getPlayerData3 = function(){
@@ -84,7 +84,7 @@
       
                 };
                 
-                vm.selectedplayer5="d66660d2-95fe-47a2-b7e5-e615f07d8337";
+                vm.selectedplayer5="52fcc7cd-4d7a-46d8-9e15-643e3a915c31";
 
                 
                 vm.getPlayerData4 = function(){

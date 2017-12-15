@@ -10,6 +10,7 @@
                 
                 console.log("in player controller");
                 vm.content = "EG Ranked Data";
+                vm.teamlogo = "/images/Penta.jpg";
                 vm.selectedplayer="61bcfa75-acbb-4ee5-a5c2-6a526b772b15";
 
                 

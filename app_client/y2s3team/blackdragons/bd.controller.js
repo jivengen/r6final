@@ -10,7 +10,8 @@
         //console.log(window.location);
         console.log("In team controller");
         vm.linkteam = "/players/BD";
-        vm.content = "ENCE Data Soon?";
+        vm.content = "Black Dragons";
+        vm.teamlogo = "/images/BD.jpg";
         //vm.selectedTeam = "";
         
         

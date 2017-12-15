@@ -10,6 +10,7 @@
         //console.log(window.location);
         console.log("In team controller");
         vm.linkteam = "/players/EG";
+        vm.teamlogo = "/images/EG3.jpg";
         vm.content = "ENCE Data Soon?";
         //vm.selectedTeam = "Evil Geniuses";
         
