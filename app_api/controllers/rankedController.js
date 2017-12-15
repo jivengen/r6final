@@ -22,7 +22,7 @@ var options = { method: 'GET',
    { 'Postman-Token': 'c0cc2c91-49b6-cb93-d457-0f68fb210bea',
      'Cache-Control': 'no-cache',
      Accept: 'application/json',
-     'X-App-Id': 'coolbuleLanApp' } };
+     'X-App-Id': process.env.R6DB_XAPPID } };
 
 
     
